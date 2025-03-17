@@ -1,0 +1,77 @@
+/* Custom styles */
+body {
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #1a1a2e, #16213e, #1a1a2e);
+}
+
+.skill-card {
+    background: linear-gradient(145deg, #2a2a4a, #1f1f3a);
+    @apply p-6 rounded-lg text-center transform hover:scale-105 transition-transform shadow-lg;
+}
+
+.skill-card i {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project-card {
+    background: linear-gradient(145deg, #2a2a4a, #1f1f3a);
+    @apply p-8 rounded-lg mb-8 transform hover:scale-105 transition-transform shadow-lg border border-blue-500/30;
+}
+
+.certification-card {
+    background: linear-gradient(145deg, #2a2a4a, #1f1f3a);
+    @apply p-8 rounded-lg text-center transform hover:scale-105 transition-transform shadow-lg border border-purple-500/30;
+}
+
+.certification-card i {
+    background: linear-gradient(45deg, #da22ff, #9733ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Glow effects */
+.glow-on-hover:hover {
+    box-shadow: 0 0 15px rgba(79, 172, 254, 0.5);
+}
+
+.section-heading {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(79, 172, 254, 0.3);
+}
