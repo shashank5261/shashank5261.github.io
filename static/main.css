@@ -1,0 +1,121 @@
+/* Main styles */
+:root {
+    --primary-color: #4facfe;
+    --secondary-color: #00f2fe;
+}
+
+body {
+    background-color: #0a192f;
+    color: #8892b0;
+    font-family: 'Inter', sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.skill-card {
+    background-color: rgba(31, 41, 55, 0.5);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+.project-card {
+    background-color: rgba(31, 41, 55, 0.5);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.project-card:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+.certification-card {
+    background-color: rgba(31, 41, 55, 0.5);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #60a5fa;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #93c5fd;
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.glow-on-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.glow-on-hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(79, 172, 254, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.glow-on-hover:hover::after {
+    left: 100%;
+}

@@ -6,9 +6,10 @@
     <title>Shashank V - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="styles.css" rel="stylesheet">
+    <link href="static/main.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="fixed w-full bg-gray-800/80 backdrop-blur-md shadow-lg z-50">
@@ -20,6 +21,7 @@
                     <a href="#skills" class="hover:text-blue-400 transition glow-on-hover">Skills</a>
                     <a href="#projects" class="hover:text-blue-400 transition glow-on-hover">Projects</a>
                     <a href="#certifications" class="hover:text-blue-400 transition glow-on-hover">Certifications</a>
+                    <a href="#contact" class="hover:text-blue-400 transition glow-on-hover">Contact</a>
                 </div>
             </div>
         </div>
@@ -76,10 +78,31 @@
     <section id="projects" class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-16 section-heading" data-aos="fade-up">Projects</h2>
-            <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <div class="project-card" data-aos="fade-up">
                     <h3 class="text-2xl font-bold mb-4 gradient-text">AI Code Editor</h3>
-                    <p class="text-blue-300">An advanced code editor powered by artificial intelligence, enhancing the coding experience with smart suggestions and automated improvements.</p>
+                    <p class="text-blue-300 mb-4">An advanced code editor powered by artificial intelligence, enhancing the coding experience with smart suggestions and automated improvements.</p>
+                    <div class="flex gap-4 mb-4">
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Node.js</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">OpenAI</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition"><i class="fab fa-github mr-2"></i>View Code</a>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition"><i class="fas fa-external-link-alt mr-2"></i>Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">Blockchain Voting System</h3>
+                    <p class="text-blue-300 mb-4">A secure and transparent voting system built on blockchain technology, ensuring tamper-proof election results.</p>
+                    <div class="flex gap-4 mb-4">
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Solidity</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Web3.js</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Ethereum</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition"><i class="fab fa-github mr-2"></i>View Code</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,9 +126,24 @@
         </div>
     </section>
 
-    <footer class="py-8">
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 section-heading" data-aos="fade-up">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-blue-300 mb-8" data-aos="fade-up">I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="flex justify-center space-x-6 mb-8" data-aos="fade-up">
+                    <a href="https://github.com/shashank5261" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shashank-v-9205592a3/" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:shashankfaze@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="mailto:shashankfaze@gmail.com" class="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-8 py-3 rounded-full transition transform hover:scale-105 shadow-lg" data-aos="fade-up">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-blue-500/20">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-blue-300"> 2025 Shashank V. All rights reserved.</p>
+            <p class="text-blue-300">© 2025 Shashank V. All rights reserved.</p>
         </div>
     </footer>
 
